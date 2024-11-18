@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="./BMWImg/BMW LOGO.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="page1.css">
+    <title>BMW HOME</title>
+    <link href="dist/vidbg.css" rel="stylesheet" type="text/css" />
+
+    <!-- End of <body> -->
+    <script src="dist/vidbg.js"></script>
+</head>
+<body>
+    <div class="BMWbackground", class=".vidbg-box">
+        <video src="intro.mp4" autoplay muted loop></video>
+        <div id="nav">
+           <div class="left">
+                <div>
+                 <abbr title="BMW Logo"><a href="index.html"><img id="logo" src="./BMWImg/BMWLOGO.png"></a></abbr>
+                </div>
+                    <ul>
+                        <li><a href="Model.html">Models</a></li>
+                        <li><a href="elecrticpage.html">Electric</a></li>
+                        <li><a href="configurator.html">Configurator</a></li>
+                        <li><a href="">Visit Online Shop</a></li>
+                        <li><a href="">More BMW</a></li>
+                    </ul>
+            </div>
+            <div class="social-links">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-search "></i>
+            </div>   
+        </div>
+        <div class="name">
+            <h3>Sheer Driving Pleasure</h3>
+            <p>THE</p>
+            <span>5</span>
+            <h6>LONG WHEELBASE</h6>
+            <div class="color">
+                <p>Discover now</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var instance = new vidbg(
+            ".vidbg-box",
+            {
+                mp4: "intro.mp4", // URL or relative path to MP4 video
+                // webm: "path/to/video.webm", // URL or relative path to webm video
+                poster: "", // URL or relative path to fallback image
+                overlay: false, // Boolean to display the overlay or not
+                overlayColor: "#000", // The overlay color as a HEX
+                overlayAlpha: 0.3, // The overlay alpha. Think of this as the last integer in RGBA()
+            },
+            {
+                autoplay: false,
+                controls: true,
+                loop: true,
+                muted: true,
+                playsInline: true,
+            }
+        );
+    </script>
+        
+</body>
+</html>
